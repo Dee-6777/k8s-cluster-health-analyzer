@@ -1,7 +1,5 @@
 # Kubernetes Cluster Health Analyzer
 
-## Overview
-
 The Kubernetes Cluster Health Analyzer is a tool designed to monitor and evaluate the health of a Kubernetes cluster. It gathers essential metrics from nodes and pods, providing insights into performance, resource utilization, and overall cluster stability.
 
 ## Features
