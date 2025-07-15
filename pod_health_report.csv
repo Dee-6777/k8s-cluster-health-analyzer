@@ -1,0 +1,12 @@
+Namespace,Pod Name,Status,CPU Usage (nanos),Memory Usage (KiB)
+kube-system,coredns-668d6bf9bc-6t8jg,Running,N/A,N/A
+kube-system,etcd-minikube,Running,N/A,N/A
+kube-system,kube-apiserver-minikube,Running,N/A,N/A
+kube-system,kube-controller-manager-minikube,Running,N/A,N/A
+kube-system,kube-proxy-gwzl2,Running,N/A,N/A
+kube-system,kube-scheduler-minikube,Running,N/A,N/A
+kube-system,metrics-server-787c6d4989-vhjf7,Running,N/A,N/A
+kube-system,metrics-server-7fbb699795-zl96h,Running,N/A,N/A
+kube-system,storage-provisioner,Running,N/A,N/A
+kubernetes-dashboard,dashboard-metrics-scraper-5d59dccf9b-ddxwg,Running,N/A,N/A
+kubernetes-dashboard,kubernetes-dashboard-7779f9b69b-pgjws,Running,N/A,N/A

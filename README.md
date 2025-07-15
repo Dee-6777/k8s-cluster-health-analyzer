@@ -1,12 +1,12 @@
 # Kubernetes Cluster Health Analyzer
 
-The Kubernetes Cluster Health Analyzer is a tool designed to monitor and evaluate the health of a Kubernetes cluster. It gathers essential metrics from nodes and pods, providing insights into performance, resource utilization, and overall cluster stability.
+Monitor and analyze the health of your Kubernetes cluster, including node and pod metrics, via a REST API and dashboard.
 
 ## Features
 
 - Collects node and pod metrics (CPU, memory, status, etc.)
 - Exposes a REST API for health monitoring
-- Provides alerts for unhealthy nodes or pods
+- Visualizes metrics in a React dashboard
 - Easily extendable for additional health checks
 
 ## Installation
@@ -14,22 +14,28 @@ The Kubernetes Cluster Health Analyzer is a tool designed to monitor and evaluat
 ### Prerequisites
 
 - Python 3.8+
+- Node.js & npm (for dashboard)
 - Kubernetes cluster with access via `kubectl`
-- Virtual environment (recommended)
+- Metrics Server installed on your cluster
 
-### Setup
+### Setup (Backend)
 
 ```sh
-# Clone the repository
 git clone https://github.com/yourusername/k8s-cluster-health-analyzer.git
 cd k8s-cluster-health-analyzer
 
-# Create and activate a virtual environment
 python3 -m venv venv
-source venv/bin/activate  # On Windows, use `venv\\Scripts\\activate`
+source venv/bin/activate  # On Windows: venv\\Scripts\\activate
 
-# Install dependencies
 pip install -r requirements.txt
+```
+
+### Setup (Frontend)
+
+```sh
+cd dashboard
+npm install
+npm start
 ```
 
 ## Usage
@@ -48,11 +54,11 @@ uvicorn app:app --reload --host 0.0.0.0 --port 8000
 | `/nodes`  | GET    | Fetch node metrics |
 | `/pods`   | GET    | Fetch pod metrics |
 
-Example:
+### View in Dashboard
 
-```sh
-curl http://localhost:8000/nodes
-```
+1. Start the backend server (see above).
+2. Start the frontend.
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Contributing
 
@@ -63,8 +69,8 @@ curl http://localhost:8000/nodes
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+MIT License. See [LICENSE](LICENSE).
 
 ## Contact
 
-For any questions or issues, feel free to open an issue in the repository.
+Open an issue for questions or suggestions.
