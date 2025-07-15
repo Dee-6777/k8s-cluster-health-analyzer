@@ -58,7 +58,7 @@ uvicorn app:app --reload --host 0.0.0.0 --port 8000
 
 1. Start the backend server (see above).
 2. Start the frontend.
-3. Open [http://localhost:3000](http://localhost:3000) in your browser.
+3. Open [http://localhost:8000](http://localhost:8000) in your browser.
 
 ## Contributing
 
