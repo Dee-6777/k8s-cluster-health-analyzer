@@ -49,7 +49,7 @@ def get_pod_health():
 
         # Fetch resource usage from metrics.k8s.io
         try:
-            pod_metrics = metrics_api.get_namespaced_custom_object("metrics.k8s.io", "v1beta1", "default", "pods", pod_name)
+            pod_metrics = metrics_api.get_namespaced_custom_object("metrics.k8s.io", "v1beta1", namespace, "pods", pod_name)
             containers = pod_metrics["containers"]
             cpu_usage = sum(int(c["usage"]["cpu"].replace("n", "")) for c in containers)  # Convert nano CPUs to int
             mem_usage = sum(int(c["usage"]["memory"].replace("Ki", "")) for c in containers)  # Convert KiB to int
