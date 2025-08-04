@@ -148,6 +148,16 @@ npm start
   }
 ]
 ```
+## 🔎 Dashboard Overview
+### The first page you'll land into 🚀 - provides overall cluster health 🩺
+<img width="2938" height="1890" alt="image" src="https://github.com/user-attachments/assets/867fd278-20a5-4f92-b5c1-f6a059bf94be" />
+
+### Node health 📈
+<img width="3456" height="2081" alt="image" src="https://github.com/user-attachments/assets/b399bf36-a961-4282-a82c-ed1169240e54" />
+
+### Pods health 📈
+<img width="3455" height="2076" alt="image" src="https://github.com/user-attachments/assets/2ac977e8-e90d-4440-872a-8d76a34ac5a5" />
+
 
 ## 🛠️ Development
 
